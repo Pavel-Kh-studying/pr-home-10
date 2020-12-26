@@ -46,10 +46,12 @@ function isTriangleReal(sideOne, sideTwo, sideThree) {
   }
 
   if (
+    sideOne > 0 & 
+    sideTwo > 0 & 
+    sideThree > 0 &
     sideOne + sideTwo > sideThree & 
     sideOne + sideThree > sideTwo & 
-    sideThree + sideTwo > sideOne &
-    sideOne > 0 & sideTwo > 0 & sideThree > 0
+    sideThree + sideTwo > sideOne 
     ) {
     return true
   } 
